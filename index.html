@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Title</title>
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        /* Reset default margin and padding for list elements */
+        ul, li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        
+        /* Style for horizontal header */
+        header {
+            background-color: #505064;
+            color: #fff;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        /* Style for navigation links */
+        nav ul {
+            display: flex;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+            position: relative;
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        /* Style for dropdown menus */
+        nav ul li ul {
+            display: block;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #404054;
+            width: 150px;
+            z-index: 1;
+            max-height: 0;
+            overflow: hidden;
+        }
+        
+        nav ul li:hover ul {
+            max-height: 200px; /* Adjust the height as needed */
+            transition: max-height 0.3s ease-in-out; /* transition on hover */
+        }
+        
+        nav ul li ul li {
+            width: 100%;
+        }
+        
+        nav ul li ul li a {
+            padding: 10px;
+        }
+        
+        /* Style for the logo */
+        .logo {
+            margin-left: 20px;
+            max-height: 26px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="assets/images/brent_generated/home_button.png" alt="Logo" class="logo">
+        </a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">About</a>
+                    <ul>
+                        <li><a href="pages/about_us.html">About Me</a></li>
+                        <li><a href="pages/about_the_website.html">The Website</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                    <ul>
+                        <li><a href="#">Service 1</a></li>
+                    </ul>
+                </li>
+                <li><a href="pages/contact_information.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>About Us</h2>
+            <p>This is a brief description of our website.</p>
+        </section>
+
+        <section>
+            <h2>Our Services</h2>
+            <ul>
+                <li>Service 1</li>
+                <li>Service 2</li>
+                <li>Service 3</li>
+            </ul>
+        </section>
+		<section>
+			<h2>About Us</h2>
+			<p>This is a brief description of our website.</p>
+		</section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Brent Vasas. All rights reserved.</p>
+    </footer>
+</body>
+</html>
